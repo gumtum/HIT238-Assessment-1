@@ -17,17 +17,15 @@
     <li>
       <a href="index.html"> Home Page </a>
       >
-      <a href="chooseTaxi.html"> Choose Taxi </a>
-      >
-      <a href="chooseDistance.html"> Choose Distance </a>
+      <a href="chooseDistance.html"> Options </a>
     </li>
 
   </ul>
   </div>
 
   <div class="content" id="content">
-    <h2> Please choose the distance of travel to proceed </h2>
-    <a href="chooseTaxi.html" button type="button" name="Back" class="backwards-button"> Back </a>
+    <h2> Please choose to proceed</h2>
+    <a href="index.html" button type="button" name="Back" class="backwards-button"> Back </a>
     <a href="confirmation.html" button type="button" name="Next" class="forward-button"> Next </a>
   </div>
 
@@ -40,27 +38,90 @@
       </div>
 
       <div class="cardContainer">
-        <input type="radio" name="distanceSelect" value="50km">
+        <input type="radio" id="rb2" name="distanceSelect" value="50km">
         <label for="50km"> Under 50km </label> <br>
         <img src="images/4seat.jpg" alt="4seat" class="cardImage">
       </div>
 
       <div class="cardContainer">
-        <input type="radio" name="distanceSelect" value="200km">
+        <input type="radio" id="rb3" name="distanceSelect" value="200km">
         <label for="200km"> Over 200km </label> <br>
         <img src="images/4seat.jpg" alt="4seat" class="cardImage">
       </div>
 
       <div class="cardContainer">
-        <input type="radio" name="distanceSelect" value="Interstate">
+        <input type="radio" id="rb4" name="distanceSelect" value="Interstate">
         <label for="interstate"> Interstate Travel </label> <br>
         <img src="images/4seat.jpg" alt="4seat" class="cardImage">
       </div>
 
+      <div class="cardContainer">
+        <input type="radio" id="rb5" name="carSelect" value="4" checked>
+        <label for="fourSeat"> 4 Seat Car </label><br>
+        <img src="images/4seat.jpg" alt="4seat" class="cardImage">
+      </div>
+
+      <div class="cardContainer">
+        <input type="radio" id="rb6" name="carSelect" value="7">
+        <label for="sevenSeat"> 7 Seat Car </label><br>
+        <img src="images/4seat.jpg" alt="4seat" class="cardImage">
+      </div>
+
+      <div class="cardContainer">
+        <input type="radio" id="rb7" name="carSelect" value="Minibus">
+        <label for="miniBus"> Minibus </label><br>
+        <img src="images/4seat.jpg" alt="4seat" class="cardImage">
+      </div>
+
+      <div class="cardContainer">
+        <input type="radio" id="rb8" name="carSelect" value="Bus">
+        <label for="bus"> Bus </label><br>
+        <img src="images/4seat.jpg" alt="4seat" class="cardImage">
+      </div>
     </div>
   </div>
 </div>
+<script>
+function storeDistance(){
+  var rb1 = document.getElementByID("rb1");
+  var rb2 = document.getElementByID("rb2");
+  var rb3 = document.getElementByID("rb3");
+  var rb4 = document.getElementByID("rb4");
+  var distance = "";
 
+  if(rb1.checked==true)
+    distance = rb1.value;
+  else if(rb2.checked==true)
+    distance = rb2.value;
+  else if(rb2.checked==true)
+    distance = rb3.value
+  else {
+    distace = rb4.value
+
+  var rb5 = document.getElementByID("rb5");
+  var rb6 = document.getElementByID("rb6");
+  var rb7 = document.getElementByID("rb7");
+  var rb8 = document.getElementByID("rb8");
+  var taxi = "";
+
+  if(rb5.checked==true)
+    taxi = rb5.value;
+  else if(rb6.checked==true)
+    taxi = rb2.value;
+  else if(rb7.checked==true)
+    taxi = rb3.value
+  else {
+    taxi = rb4.value
+
+  sessionStorage.setItem("taxi", taxi);
+  sessionStorage.setItem("distance", JSON.stringify(distance));
+
+  location.href = "confirmation.html";
+  }
+}
+
+
+</script>
 <script src="main.js"> </script>
 </body>
 </html>
