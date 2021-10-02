@@ -25,8 +25,19 @@
   </ul>
   </div>
 
+<script>
+function get(){
+  var distance = sessionStorage.getItem("distance");
+  var taxi = sessionStorage.getItem("taxi");
+  console.log(distance);
+  console.log(taxi);
+  alert("You will be driving " + distance + " in a " + taxi)
+}
+</script>
+
   <div class="content" id="content">
     <h2> Please confirm the details of your order </h2>
+    <input type="button" value="Receive Confirmation" onClick="get()" class="confirm-button"/>
     <a href="chooseDistance.html" button type="button" name="Back" title="Go back button" class="backwards-button"> Back </a>
   </div>
 
