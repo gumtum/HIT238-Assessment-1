@@ -1,0 +1,14 @@
+/* Start Body */
+* {
+	box-sizing: border-box;
+}
+
+body{
+	max-width: 70rem;
+	text-align: left;
+	background-color: darkgrey;
+	margin: auto;
+	font-size: 1.4rem;
+}
+
+/* End Body */
