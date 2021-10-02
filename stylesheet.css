@@ -23,20 +23,20 @@ body{
 /* End Body */
 
 /* Start breadNav */
-.breadnav{
-	padding-bottom: .75rem;
+.breadNav{
+	padding-bottom: .70rem;
 }
 
-.breadcrumbs li a{
+.breadCrumbs li a{
 	color: black;
 	text-decoration: none;
 }
 
-.breadnav li a:hover{
+.breadNav li a:hover{
 	text-decoration: underline;
 }
 
-.breadcrumbs{
+.breadCrumbs{
 	list-style-type: none;
 }
 /* End breadNav */
