@@ -93,6 +93,18 @@ h2 {
   -ms-transform: translate(-50%, -50%);
   transform: translate(-50%, -50%);
 }
+
+.darkMode-button{
+  color: white;
+  padding: 32px 64px;
+  background-color: #383838;
+	margin: 16px 8px 16px 8px;
+  position: absolute;
+	top: 20px;
+  right: -80px;
+  -ms-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+}
 /* End Buttons */
 
 /* Start Selection */
@@ -145,3 +157,27 @@ h2 {
 }
 
 /* End Transition */
+
+/* Start Dark Mode */
+.dark-mode {
+	background-color: black;
+	color: white;
+  height: auto;
+	padding-bottom: 500px;
+  box-shadow: 0 6px 8px rgba(0,0,0,0.20);
+  position: relative;
+}
+
+.light-mode {
+	background-color: white;
+	color: black;
+	height: auto;
+	padding-bottom: 500px;
+	box-shadow: 0 6px 8px rgba(0,0,0,0.20);
+	position: relative;
+}
+
+.dark-mode h1, .dark-mode h2, .dark-mode .breadCrumbs li a{
+  color: white;
+}
+/* End Dark Mode */
