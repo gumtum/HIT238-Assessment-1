@@ -26,16 +26,29 @@
     <button type="button" name="Next" onclick="goNext()" title="Go next button" class="forward-button"> Next </button>
   </div>
 
-  <div class="imageSelection" id="imageSelection">
-    <ul class="imageSelect">
-      <li> 4 Seat Car </li>
-      <li> 7 Seat Car </li>
-      <li> Minibus </li>
-      <li> Bus </li>
-    </ul>
-  </div>
+  <div class="choiceSection"> </div>
+    <div class="cardSelection">
+      <div class="cardContainer">
+        <input type="radio" id="fourSeat" name="carSelect" value="4 Seat Car">
+        <label for="fourSeat"> 4 Seat Car </label><br>
+      </div>
 
-</div>
+      <div class="cardContainer">
+        <input type="radio" id="sevenSeat" name="carSelect" value="7 Seat Car">
+        <label for="sevenSeat"> 7 Seat Car </label><br>
+      </div>
+
+      <div class="cardContainer">
+        <input type="radio" id="miniBus" name="carSelect" value="Minibus">
+        <label for="miniBus"> Minibus </label><br>
+      </div>
+
+      <div class="cardContainer">
+        <input type="radio" id="bus" name="carSelect" value="Bus">
+        <label for="bus"> Bus </label><br>
+      </div>
+
+    </div>
 
 </body>
 </html>
