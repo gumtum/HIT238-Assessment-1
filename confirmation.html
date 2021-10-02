@@ -29,8 +29,6 @@
 function get(){
   var distance = sessionStorage.getItem("distance");
   var taxi = sessionStorage.getItem("taxi");
-  console.log(distance);
-  console.log(taxi);
   alert("You will be driving " + distance + " in a " + taxi)
 }
 </script>
@@ -38,6 +36,7 @@ function get(){
   <div class="content" id="content">
     <button type="button" name="darkMode" title="Dark Mode" class="darkMode-button" onClick="toggleDarkMode()"> Dark Mode </button>
     <h2> Please confirm the details of your order </h2>
+    <input type="button" value="Receive Location" onClick="getLocation()" class="location-button"/>
     <input type="button" value="Receive Confirmation" onClick="get()" class="confirm-button"/>
     <a href="chooseDistance.html" button type="button" name="Back" title="Go back button" class="backwards-button"> Back </a>
   </div>
