@@ -25,21 +25,37 @@
   </ul>
   </div>
 
-<script>
-function get(){
-  var distance = sessionStorage.getItem("distance");
-  var taxi = sessionStorage.getItem("taxi");
-  alert("You will be driving " + distance + " in a " + taxi)
-}
-</script>
-
   <div class="content" id="content">
     <button type="button" name="darkMode" title="Dark Mode" class="darkMode-button" onClick="toggleDarkMode()"> Dark Mode </button>
     <h2> Please confirm the details of your order </h2>
-    <input type="button" value="Receive Confirmation" onClick="getLocation()" class="location-button"/>
+    <p id="location"> </p>
+    <input type="button" value="Receive Location" onClick="getLocation()" class="location-button"/>
     <input type="button" value="Receive Confirmation" onClick="get()" class="confirm-button"/>
     <a href="chooseDistance.html" button type="button" name="Back" title="Go back button" class="backwards-button"> Back </a>
   </div>
+
+  <script>
+  function get(){
+    var distance = sessionStorage.getItem("distance");
+    var taxi = sessionStorage.getItem("taxi");
+    alert("You will be driving " + distance + " in a " + taxi)
+  }
+
+  var x = document.getElementById("location");
+      console.log(x);
+         function getLocation() {
+           if (navigator.geolocation) {
+             navigator.geolocation.getCurrentPosition(showPosition);
+           } else {
+             x.innerHTML = "Geolocation is not supported.";
+           }
+         }
+
+         function showPosition(position) {
+           x.innerHTML = "Latitude: " + position.coords.latitude +
+           "Longitude: " + position.coords.longitude;
+         }
+  </script>
 
 </div>
 <script src="main.js"> </script>
