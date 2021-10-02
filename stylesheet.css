@@ -98,11 +98,13 @@ h2 {
 }
 
 .cardContainer{
+  width: 180px;
 	display: block;
 	border-radius: 16px;
 	margin: 20px;
 	box-shadow: 0 2px 2px rgba(0,0,0,0.3);
   float: left;
+  padding-right: 10px;
 }
 
 .cardImage{
