@@ -18,4 +18,4 @@ for (let i = 0; i < anchors.length; i++) {
       window.location.href = varTarget;
     }, 400)
   })
-}
+  }
