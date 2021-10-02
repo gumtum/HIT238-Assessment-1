@@ -24,11 +24,14 @@ body{
 
 /* Start breadNav */
 .breadNav{
-	padding-bottom: .70rem;
+	padding-top: 0.50rem;
+  padding-bottom: 0.50rem;
+  background-color: #201533;
+  color: white;
 }
 
 .breadCrumbs li a{
-	color: black;
+	color: white;
 	text-decoration: none;
 }
 
@@ -39,4 +42,5 @@ body{
 .breadCrumbs{
 	list-style-type: none;
 }
+
 /* End breadNav */
