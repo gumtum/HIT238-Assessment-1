@@ -3,7 +3,7 @@
 <head>
 <title> HIT238 Assessment 1 </title>
 <meta charset="utf-8">
-<meta name="viewport" content="width=device-width, intiial-scale=1.0, user-scalable=yes">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 <link href="stylesheet.css" rel="stylesheet">
 </head>
 
@@ -27,40 +27,40 @@
 
   <div class="content" id="content">
     <h2> Please choose the distance of travel to proceed </h2>
-    <a href="chooseTaxi.html" button type="button" name="Back" title="Go back button" class="backwards-button"> Back </a>
-    <a href="confirmation.html" button type="submit" name="Next" title="Go next button" class="forward-button"> Next </a>
+    <a href="chooseTaxi.html" button type="button" name="Back" class="backwards-button"> Back </a>
+    <a href="confirmation.html" button type="button" name="Next" class="forward-button"> Next </a>
   </div>
 
   <div class="choiceSection">
     <div class="cardSelection">
       <div class="cardContainer">
-        <input type="radio" id="20km" name="distanceSelect" value="20km">
+        <input type="radio" id="rb1" name="distanceSelect" value="20km" checked>
         <label for="20km"> Under 20km </label> <br>
         <img src="images/4seat.jpg" alt="20km" class="cardImage">
       </div>
 
       <div class="cardContainer">
-        <input type="radio" id="50km" name="distanceSelect" value="50km">
+        <input type="radio" name="distanceSelect" value="50km">
         <label for="50km"> Under 50km </label> <br>
         <img src="images/4seat.jpg" alt="4seat" class="cardImage">
       </div>
 
       <div class="cardContainer">
-        <input type="radio" id="200km" name="distanceSelect" value="200km">
+        <input type="radio" name="distanceSelect" value="200km">
         <label for="200km"> Over 200km </label> <br>
         <img src="images/4seat.jpg" alt="4seat" class="cardImage">
       </div>
 
       <div class="cardContainer">
-        <input type="radio" id="interstate" name="distanceSelect" value="Interstate">
+        <input type="radio" name="distanceSelect" value="Interstate">
         <label for="interstate"> Interstate Travel </label> <br>
         <img src="images/4seat.jpg" alt="4seat" class="cardImage">
       </div>
 
     </div>
   </div>
-
 </div>
+
 <script src="main.js"> </script>
 </body>
 </html>
