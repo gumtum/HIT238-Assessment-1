@@ -2,7 +2,7 @@ window.onload = () => {
   const transition_el = document.querySelector('.transition');
   setTimeout (() => {
     transition_el.classList.remove('active');
-  }, 300);
+  }, 400);
 }
 
 for (let i = 0; i < anchors.length; i++) {
