@@ -94,6 +94,18 @@ h2 {
   transform: translate(-50%, -50%);
 }
 
+.location-button{
+  color: white;
+  padding: 32px 64px;
+  background-color: #201533;
+	margin: 16px 8px 16px 8px;
+  position: absolute;
+	bottom: 250px;
+  left: 50%;
+  -ms-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+}
+
 .darkMode-button{
   color: white;
   padding: 32px 64px;
