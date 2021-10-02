@@ -113,3 +113,24 @@ h2 {
 }
 
 /* End Selection */
+
+/* Start Transition */
+.transition1 {
+  position: fixed;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background-color: darkgrey;
+  opacity: 0;
+  pointer-events: none;
+  transition: 0.4s ease-out;
+  z-index: 101;
+}
+
+.transition1.active {
+  opacity: 1;
+  pointer-events: all;
+}
+
+/* End Transition */
