@@ -83,3 +83,25 @@ h2 {
   transform: translate(-50%, -50%);
 }
 /* End Buttons */
+
+/* Start Selection */
+.choiceSection{
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: center;
+}
+
+.cardSelection{
+	display: block;
+	border-radius: 15px;
+	margin: 8px;
+}
+
+.cardContainer{
+	display: block;
+	border-radius: 16px;
+	margin: 20px;
+	box-shadow: 0 2px 2px rgba(0,0,0,0.3);
+}
+
+/* End Selection */
