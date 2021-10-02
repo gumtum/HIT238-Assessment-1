@@ -19,3 +19,9 @@ for (let i = 0; i < anchors.length; i++) {
     }, 400)
   })
   }
+
+function toggleDarkMode() {
+  var body = document.getElementById("bodyContainer");
+  var currentClass = body.className;
+  body.className = currentClass == "dark-mode" ? "light-mode" : "dark-mode";
+  }
