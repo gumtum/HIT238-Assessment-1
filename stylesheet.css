@@ -10,6 +10,7 @@ body{
 .bodyContainer{
 	background-color: white;
   height: auto;
+	padding-bottom: 500px;
   box-shadow: 0 6px 8px rgba(0,0,0,0.20);
   position: relative;
 }
@@ -63,7 +64,7 @@ h2 {
   background-color: #201533;
 	margin: 16px 8px 16px 8px;
   position: absolute;
-  bottom: -200px;
+  bottom: 0px;
   left: 75%;
   -ms-transform: translate(-50%, -50%);
   transform: translate(-50%, -50%);
@@ -75,8 +76,20 @@ h2 {
   background-color: #201533;
 	margin: 16px 8px 16px 8px;
   position: absolute;
-  bottom: -200px;
+  bottom: 0px;
   left: 25%;
+  -ms-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+}
+
+.confirm-button{
+  color: white;
+  padding: 32px 64px;
+  background-color: #201533;
+	margin: 16px 8px 16px 8px;
+  position: absolute;
+	bottom: 120px;
+  left: 50%;
   -ms-transform: translate(-50%, -50%);
   transform: translate(-50%, -50%);
 }
