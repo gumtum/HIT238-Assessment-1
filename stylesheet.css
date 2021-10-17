@@ -34,12 +34,22 @@ h2 {
 }
 /* End Body */
 
-/* Start breadNav */
-.breadNav{
-	padding-top: 0.50rem;
-  padding-bottom: 0.50rem;
+/* Start Title */
+.title{
+	padding-top: 1rem;
+  padding-bottom: 1rem;
+	padding-left: 1rem;
   background-color: #201533;
   color: white;
+	font-size: 35px;
+}
+
+/* End Title */
+
+/* Start breadNav */
+.breadNav{
+	padding-top: 1rem;
+  padding-bottom: 1rem;
 }
 
 .breadCrumbs li a{
