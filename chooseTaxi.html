@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<title> HIT238 Assessment 1 </title>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
+<link href="stylesheet.css" rel="stylesheet">
+</head>
+
+<body>
+
+<div class="transition transition1 active"> </div>
+
+<div class="bodyContainer" id="bodyContainer">
+
+  <div class="title" id="title">
+    Taxi Application
+  </div>
+
+  <div class="content" id="content">
+
+    <div class="breadNav" id="breadNav">
+    <ul class="breadCrumbs">
+      <li>
+        <a href="index.html"> Home Page </a>
+        >
+        <a href="chooseDistance.html"> Options </a>
+      </li>
+
+    </ul>
+    </div>
+
+    <button type="button" name="darkMode" title="Dark Mode" class="darkMode-button" onClick="toggleDarkMode()"> Dark Mode </button>
+    <h2> Please choose to proceed</h2>
+    <a href="index.html" button type="button" name="Back" class="backwards-button"> Back </a>
+    <a href="confirmation.html" button type="button" name="Next" class="forward-button" onClick="storeOptions()"> Next </a>
+  </div>
+
+  <div class="choiceSection">
+    <div class="cardSelection">
+      <div class="cardContainer">
+      <div class="cardContainer">
+        <input type="radio" id="rb5" name="carSelect" value="4 seat car" checked>
+        <label for="fourSeat"> 4 Seat Car </label><br>
+        <img src="images/4seat.jpg" alt="4seat" class="cardImage">
+      </div>
+
+      <div class="cardContainer">
+        <input type="radio" id="rb6" name="carSelect" value="7 seat car">
+        <label for="sevenSeat"> 7 Seat Car </label><br>
+        <img src="images/4seat.jpg" alt="4seat" class="cardImage">
+      </div>
+
+      <div class="cardContainer">
+        <input type="radio" id="rb7" name="carSelect" value="minibus">
+        <label for="miniBus"> Minibus </label><br>
+        <img src="images/4seat.jpg" alt="4seat" class="cardImage">
+      </div>
+
+      <div class="cardContainer">
+        <input type="radio" id="rb8" name="carSelect" value="bus">
+        <label for="bus"> Bus </label><br>
+        <img src="images/4seat.jpg" alt="4seat" class="cardImage">
+      </div>
+    </div>
+  </div>
+</div>
+<script>
+function storeOptions(){
+  var distance = "";
+  var taxi = "";
+
+  if(document.getElementById("rb1").checked){
+    distance = rb1.value;
+  }
+  else if(document.getElementById("rb2").checked){
+    distance = rb2.value;
+  }
+  else if(document.getElementById("rb3").checked){
+    distance = rb3.value
+  }
+  else{
+    distance = rb4.value
+  }
+
+  if(document.getElementById("rb5").checked){
+    taxi = rb5.value;
+  }
+  else if(document.getElementById("rb6").checked){
+    taxi = rb6.value;
+  }
+  else if(document.getElementById("rb7").checked){
+    taxi = rb7.value
+  }
+  else {
+    taxi = rb8.value
+}
+  sessionStorage.setItem("taxi", taxi);
+  sessionStorage.setItem("distance", distance);
+
+  location.href = "confirmation.html";
+}
+
+</script>
+
+<script src="main.js"> </script>
+</body>
+</html>
