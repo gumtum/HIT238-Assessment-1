@@ -65,21 +65,7 @@
 
 <script>
 function storeOptions(){
-  var distance = "";
   var taxi = "";
-
-  if(document.getElementById("rb1").checked){
-    distance = rb1.value;
-  }
-  else if(document.getElementById("rb2").checked){
-    distance = rb2.value;
-  }
-  else if(document.getElementById("rb3").checked){
-    distance = rb3.value
-  }
-  else{
-    distance = rb4.value
-  }
 
   if(document.getElementById("rb5").checked){
     taxi = rb5.value;
@@ -94,8 +80,6 @@ function storeOptions(){
     taxi = rb8.value
 }
   sessionStorage.setItem("taxi", taxi);
-  sessionStorage.setItem("distance", distance);
-
   location.href = "confirmation.html";
 }
 

@@ -67,7 +67,6 @@
 <script>
 function storeOptions(){
   var distance = "";
-  var taxi = "";
 
   if(document.getElementById("rb1").checked){
     distance = rb1.value;
@@ -81,20 +80,6 @@ function storeOptions(){
   else{
     distance = rb4.value
   }
-
-  if(document.getElementById("rb5").checked){
-    taxi = rb5.value;
-  }
-  else if(document.getElementById("rb6").checked){
-    taxi = rb6.value;
-  }
-  else if(document.getElementById("rb7").checked){
-    taxi = rb7.value
-  }
-  else {
-    taxi = rb8.value
-}
-  sessionStorage.setItem("taxi", taxi);
   sessionStorage.setItem("distance", distance);
 
   location.href = "confirmation.html";
