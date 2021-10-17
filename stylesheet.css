@@ -31,6 +31,7 @@ h2 {
 	font-size: 2rem;
 	color: black;
 	margin: 16px 8px 16px 8px;
+	float: left;
 }
 /* End Body */
 
@@ -74,7 +75,7 @@ h2 {
   background-color: #201533;
 	margin: 16px 8px 16px 8px;
   position: absolute;
-  bottom: 0px;
+  bottom: -50px;
   left: 75%;
   -ms-transform: translate(-50%, -50%);
   transform: translate(-50%, -50%);
@@ -86,7 +87,7 @@ h2 {
   background-color: #201533;
 	margin: 16px 8px 16px 8px;
   position: absolute;
-  bottom: 0px;
+  bottom: -50px;
   left: 25%;
   -ms-transform: translate(-50%, -50%);
   transform: translate(-50%, -50%);
@@ -98,7 +99,7 @@ h2 {
   background-color: #201533;
 	margin: 16px 8px 16px 8px;
   position: absolute;
-	bottom: 120px;
+	bottom: 50px;
   left: 50%;
   -ms-transform: translate(-50%, -50%);
   transform: translate(-50%, -50%);
@@ -110,7 +111,7 @@ h2 {
   background-color: #201533;
 	margin: 16px 8px 16px 8px;
   position: absolute;
-	bottom: 250px;
+	bottom: 180px;
   left: 50%;
   -ms-transform: translate(-50%, -50%);
   transform: translate(-50%, -50%);
@@ -126,6 +127,7 @@ h2 {
 	top: 20px;
   -ms-transform: translate(-50%, -50%);
   transform: translate(-50%, -50%);
+	float: left;
 }
 /* End Buttons */
 
