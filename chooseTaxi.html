@@ -23,8 +23,6 @@
     <ul class="breadCrumbs">
       <li>
         <a href="index.html"> Home Page </a>
-        >
-        <a href="chooseDistance.html"> Options </a>
       </li>
 
     </ul>
@@ -33,12 +31,11 @@
     <button type="button" name="darkMode" title="Dark Mode" class="darkMode-button" onClick="toggleDarkMode()"> Dark Mode </button>
     <h2> Please choose to proceed</h2>
     <a href="index.html" button type="button" name="Back" class="backwards-button"> Back </a>
-    <a href="confirmation.html" button type="button" name="Next" class="forward-button" onClick="storeOptions()"> Next </a>
+    <a href="chooseDistance.html" button type="button" name="Next" class="forward-button" onClick="storeOptions()"> Next </a>
   </div>
 
   <div class="choiceSection">
     <div class="cardSelection">
-      <div class="cardContainer">
       <div class="cardContainer">
         <input type="radio" id="rb5" name="carSelect" value="4 seat car" checked>
         <label for="fourSeat"> 4 Seat Car </label><br>
@@ -65,6 +62,7 @@
     </div>
   </div>
 </div>
+
 <script>
 function storeOptions(){
   var distance = "";
