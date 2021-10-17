@@ -10,7 +10,7 @@ body{
 .bodyContainer{
 	background-color: white;
   height: auto;
-	padding-bottom: 500px;
+	padding-bottom: 700px;
   box-shadow: 0 6px 8px rgba(0,0,0,0.20);
   position: relative;
 }
@@ -99,7 +99,7 @@ h2 {
   background-color: #201533;
 	margin: 16px 8px 16px 8px;
   position: absolute;
-	bottom: 50px;
+	bottom: 150px;
   left: 50%;
   -ms-transform: translate(-50%, -50%);
   transform: translate(-50%, -50%);
@@ -111,7 +111,7 @@ h2 {
   background-color: #201533;
 	margin: 16px 8px 16px 8px;
   position: absolute;
-	bottom: 180px;
+	bottom: 300px;
   left: 50%;
   -ms-transform: translate(-50%, -50%);
   transform: translate(-50%, -50%);
@@ -136,6 +136,7 @@ h2 {
 	display: flex;
 	flex-wrap: wrap;
 	justify-content: center;
+	float: left;
 }
 
 .cardSelection{
@@ -187,7 +188,7 @@ h2 {
 	background-color: black;
 	color: white;
   height: auto;
-	padding-bottom: 500px;
+	padding-bottom: 700px;
   box-shadow: 0 6px 8px rgba(0,0,0,0.20);
   position: relative;
 }
@@ -196,7 +197,7 @@ h2 {
 	background-color: white;
 	color: black;
 	height: auto;
-	padding-bottom: 500px;
+	padding-bottom: 700px;
 	box-shadow: 0 6px 8px rgba(0,0,0,0.20);
 	position: relative;
 }
@@ -205,3 +206,22 @@ h2 {
   color: white;
 }
 /* End Dark Mode */
+
+@media (max-width: 800px) {
+	.cardContainer{
+	  width: 90px;
+		display: block;
+		border-radius: 8px;
+		margin: 10px;
+		box-shadow: 0 1px 1px rgba(0,0,0,0.15);
+	  float: left;
+	  padding-right: 5px;
+		font-size: 15px;
+		font-weight:500;
+		}
+
+		.cardImage{
+		  width: 80%;
+		  height: 100px;
+			}
+	}
