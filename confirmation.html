@@ -45,7 +45,11 @@
   function get(){
     var distance = sessionStorage.getItem("distance");
     var taxi = sessionStorage.getItem("taxi");
-    alert("You will be driving " + distance + " in a " + taxi)
+    var cost1 = parseInt(sessionStorage.getItem("cost1"));
+    var cost2 = parseInt(sessionStorage.getItem("cost2"));
+    var cost = cost1 + cost2
+
+    alert("You will be driving " + distance + " in a " + taxi + " and it will cost you $" + cost)
   }
 
   var x = document.getElementById("location");

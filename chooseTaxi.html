@@ -42,24 +42,28 @@
         <input type="radio" id="rb5" name="carSelect" value="4 seat car" checked>
         <label for="fourSeat"> 4 Seat Car </label><br>
         <img src="images/4seat.jpg" alt="4seat" class="cardImage">
+        <h4> $5 </h4>
       </div>
 
       <div class="cardContainer">
         <input type="radio" id="rb6" name="carSelect" value="7 seat car">
         <label for="sevenSeat"> 7 Seat Car </label><br>
         <img src="images/7seat.jpg" alt="7seat" class="cardImage">
+        <h4> $8 </h4>
       </div>
 
       <div class="cardContainer">
         <input type="radio" id="rb7" name="carSelect" value="minibus">
         <label for="miniBus"> Minibus </label><br>
         <img src="images/minibus.jpg" alt="minibus" class="cardImage">
+        <h4> $20 </h4>
       </div>
 
       <div class="cardContainer">
         <input type="radio" id="rb8" name="carSelect" value="bus">
         <label for="bus"> Bus </label><br>
         <img src="images/bus.jpg" alt="bus" class="cardImage">
+        <h4> $50 </h4>
       </div>
     </div>
   </div>
@@ -68,20 +72,28 @@
 <script>
 function storeOptions(){
   var taxi = "";
+  var cost1 = 0;
 
   if(document.getElementById("rb5").checked){
     taxi = rb5.value;
+    cost1 += 5;
   }
   else if(document.getElementById("rb6").checked){
     taxi = rb6.value;
+    cost1 += 8;
   }
   else if(document.getElementById("rb7").checked){
-    taxi = rb7.value
+    taxi = rb7.value;
+    cost1 += 20;
   }
   else {
-    taxi = rb8.value
+    taxi = rb8.value;
+    cost1 += 50;
 }
   sessionStorage.setItem("taxi", taxi);
+  location.href = "confirmation.html";
+
+  sessionStorage.setItem("cost1", cost1);
   location.href = "confirmation.html";
 }
 

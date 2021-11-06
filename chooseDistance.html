@@ -44,24 +44,28 @@
         <input type="radio" id="rb1" name="distanceSelect" value="20km" checked>
         <label for="20km"> Under 20km </label> <br>
         <img src="images/20km.jpg" alt="20km" class="cardImage">
+        <h4> $20 </h4>
       </div>
 
       <div class="cardContainer">
         <input type="radio" id="rb2" name="distanceSelect" value="50km">
         <label for="50km"> Under 50km </label> <br>
         <img src="images/50km.jpg" alt="4seat" class="cardImage">
+        <h4> $40 </h4>
       </div>
 
       <div class="cardContainer">
         <input type="radio" id="rb3" name="distanceSelect" value="200km">
         <label for="200km"> Over 200km </label> <br>
         <img src="images/200km.jpg" alt="4seat" class="cardImage">
+        <h4> $80 </h4>
       </div>
 
       <div class="cardContainer">
         <input type="radio" id="rb4" name="distanceSelect" value="interstate">
         <label for="interstate"> Interstate Travel </label> <br>
         <img src="images/interstate.jpg" alt="4seat" class="cardImage">
+        <h4> $150 </h4>
       </div>
     </div>
   </div>
@@ -69,21 +73,28 @@
 <script>
 function storeOptions(){
   var distance = "";
+  var cost2 = 0
 
   if(document.getElementById("rb1").checked){
     distance = rb1.value;
+    cost2 += 20;
   }
   else if(document.getElementById("rb2").checked){
     distance = rb2.value;
+    cost2 += 40;
   }
   else if(document.getElementById("rb3").checked){
     distance = rb3.value
+    cost2 += 80;
   }
   else{
     distance = rb4.value
+    cost2 += 150;
   }
   sessionStorage.setItem("distance", distance);
+  location.href = "confirmation.html";
 
+  sessionStorage.setItem("cost2", cost2);
   location.href = "confirmation.html";
 }
 

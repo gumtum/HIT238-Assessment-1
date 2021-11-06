@@ -34,6 +34,11 @@ h2 {
 	margin: 16px 8px 16px 8px;
 	float: left;
 }
+
+h4 {
+	font-weight: normal;
+	text-align: center;
+}
 /* End Body */
 
 /* Start Title */
